@@ -48,3 +48,43 @@ body {
 .right {
     padding-left: 20px;
 }
+
+.login-painel {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    width: 175px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="password"], input[type="text"] {
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid rgb(236, 236, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: black;
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder {
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
+
