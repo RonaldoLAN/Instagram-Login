@@ -117,3 +117,16 @@ input[type="submit"] {
     user-select: none;
 }
 
+.get-app {
+    margin-top: 20px;
+    text-align: center;
+}
+ 
+.app-buttons {
+    margin-top: 15px;
+}
+
+.app-buttons img {
+    height: 40px;
+    padding: 0 2px;
+}
