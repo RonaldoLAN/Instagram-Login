@@ -11,7 +11,14 @@ a {
 }
 
 body {
-    background-color: #FAFAFA;
+    --background: #FAFAFA;
+    --white: #FFFFFF;
+    --black: #000000;
+    --button-primario: #0095f6;
+    --border-primario: #e6e6e6;
+
+
+    background-color: var(--background);
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,8 +57,8 @@ body {
 }
 
 .login-painel {
-    background-color: white;
-    border: 1px solid #e6e6e6;
+    background-color: var(--white);
+    border: 1px solid  var(--border-primario);
     text-align: center;
     padding: 20px 0;
 }
@@ -69,14 +76,14 @@ form {
 
 input[type="password"], input[type="text"] {
     background-color: rgba(250, 250, 250, 1);
-    border: 1px solid rgb(236, 236, 234);
+    border: 1px solid var(--border-primario);
     height: 40px;
     border-radius: 4px;
     margin-top: 10px;
     padding: 10px;
     font-size: 13px;
     width: 320px;
-    color: black;
+    color: var(--black);
 }
 
 input[type="password"]::placeholder, input[type="text"]::placeholder {
@@ -93,9 +100,9 @@ input[type="submit"] {
     margin-top: 10px;
     height: 30px;
     border: 0;
-    background-color: #3c96ed;
+    background-color: var(--button-primario);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 10px;
@@ -103,9 +110,9 @@ input[type="submit"] {
 }
 
 .infobox {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     height: 60px;
-    border: 1px solid rgb(236, 236, 234);
+    border: 1px solid var(--border-primario);
     margin: 10px auto 0;
     display: flex;
     justify-content: center;
@@ -138,7 +145,7 @@ footer {
 }
 
 footer a {
-    color: black;
+    color: var(--black);
     font-weight: bold;
     margin-right: 8px;
 }
@@ -175,8 +182,8 @@ footer a {
     width: 320px;
     margin: 10px 0;
     height: 35px;
-    background-color: #0095f6;
-    color: #FFFFFF;
+    background-color: var(--button-primario);
+    color: var(--white);
     border: 0;
     border-radius: 4px;
     font-size: 15px;
@@ -193,7 +200,7 @@ footer a {
 
 .line {
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: var(--border-primario);
     width: 35%;
 }
 
